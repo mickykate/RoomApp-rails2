@@ -1,0 +1,59 @@
+<body>
+    <header>
+  <nav class="navbar Navbar">
+    <div class="container-fluid">
+      <a href="/"><img class="Navbar__logo" alt="サイトロゴ" src="https://rails-02-sample.herokuapp.com/assets/common/logo.png"></a>
+    </div>
+  </nav>
+</header>
+
+<div class="FirstView">
+  <section class="container">
+    <h2 class="FirstView__title">
+      Potepan Shareで<br>
+      まだ体験したことのない<br>
+      旅をしよう
+    </h2>
+
+    <div class="FirstViewSearch">
+      <form action="/" accept-charset="UTF-8" method="get">
+        <input class="form-control FirstViewSearch__input" placeholder="エリア名を入力" type="text" name="area" id="area">
+        <input type="submit" name="commit" value="検索" class="btn FirstViewSearch__button" data-disable-with="検索">
+      </form>    
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section class="RecommendAreaSection">
+    <h2 class="RecommendAreaSection__title">
+      おすすめのエリア
+    </h2>
+
+    <div class="RecommendAreas">
+      <%= image_tag ('recommend/tokyo.jpg') %>
+        <span class="RecommendArea__name RecommendArea__name--ja">東京</span>
+      </a>
+      <%= image_tag ('recommend/osaka.jpg') %>
+        <span class="RecommendArea__name RecommendArea__name--ja">大阪</span>
+      </a>
+      <%= image_tag ('recommend/kyoto.jpg') %>
+        <span class="RecommendArea__name RecommendArea__name--ja">京都</span>
+      </a>
+      <%= image_tag ('recommend/sapporo.jpg') %>
+        <span class="RecommendArea__name RecommendArea__name--ja">札幌</span>
+      </a>    
+    </div>
+  </section>
+</div>
+
+ <footer class="Footer">
+  <div class="container-fluid">
+    <a href="/"><img class="Footer__logo" alt="サイトロゴ" src="https://rails-02-sample.herokuapp.com/assets/common/logo.png"></a>
+
+    <p class="Footer__copyright">
+      Copyright © Potepan Share 2024 All rights reserved
+    </p>
+  </div>
+ </footer>
+</body>
