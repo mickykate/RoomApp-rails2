@@ -1,3 +1,447 @@
 // Place all the styles related to the Top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+body {
+    font-family: Yu Gothic Medium,游ゴシック Medium,YuGothic,游ゴシック体,ヒラギノ角ゴ Pro W3,メイリオ,sans-serif;
+}
+
+.Navbar {
+    background-color: #1c1d3b;
+    height: 80px;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.Navbar__logo {
+    width: 221px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.navbar>.container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container, .container-fluid {
+    max-width: 1440px;
+    padding: 0 32px;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    color: #0071c1;
+    text-decoration: none;
+}
+
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul {
+    margin-top: 0;
+}
+
+.NavItem__link--login {
+    margin-right: 32px;
+}
+.NavItem__link {
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.NavItem__link--register {
+    background-color: #ff7757;
+    color: #fff;
+}
+.NavItem__link {
+    font-size: 12px;
+    line-height: 18px;
+}
+.fw-bold {
+    font-weight: 700 !important;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.SnackBar--notice {
+    background-color: #000;
+}
+.SnackBar {
+    border-radius: 4px;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px rgba(0, 0, 0, .14), 0 1px 18px rgba(0, 0, 0, .12);
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin: auto;
+    padding: 14px 16px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 16px;
+    min-width: 288px;
+    width: fit-content;
+}
+
+@media screen and (max-width: 960px) {
+    .FirstView {
+        height: 750px;
+        margin-bottom: 100px;
+        padding-top: 117px;
+    }
+}
+
+.FirstView {
+    background-image: url(assets/images/toppage/cover-lg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 32px;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .FirstView__title {
+        font-size: 44px;
+        line-height: 53px;
+        margin-bottom: 20px;
+    }
+}
+
+.FirstView__title {
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 960px) {
+    .FirstViewSearch {
+        padding: 20px;
+        width: 478px;
+    }
+}
+
+.FirstViewSearch {
+    background: hsla(0, 0%, 100%, .4);
+    margin: auto;
+}
+
+.FirstViewSearch__input {
+    height: 58px;
+    margin-bottom: 16px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input {
+    margin: 0;
+    font-family: inherit;
+}
+
+[type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.FirstViewSearch__button {
+    align-items: center;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    height: 58px;
+    font-size: 18px;
+    background-color: #ff7757;
+    color: #fff;
+    width: 100%;
+}
+.btn {
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .RecommendAreaSection {
+        margin-bottom: 180px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .RecommendAreaSection__title {
+        font-size: 34px;
+        line-height: 50px;
+        margin-bottom: 80px;
+    }
+}
+.RecommendAreaSection__title {
+    border-bottom: 3px solid #ff7757;
+    padding-bottom: 15px;
+    width: fit-content;
+}
+
+h2 {
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.RecommendAreas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.RecommendAreas img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover
+}
+
+.RecommendArea--tokyo {
+    background-image: url(toppage/tokyo.jpg);
+}//修正済み 1114
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .RecommendArea {
+        width: calc(50% - 16px);
+    }
+}
+.RecommendArea {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    justify-content: flex-end;
+    padding: 40px 24px;
+}
+
+a {
+    color: #0071c1;
+    text-decoration: none;
+}
+
+.RecommendArea__name--ja {
+    font-size: 28px;
+    line-height: 42px;
+}
+.RecommendArea__name {
+    color: #fff;
+}
+
+.RecommendArea--osaka {
+    background-image: url(/assets/home/recommend/osaka.jpg);
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .RecommendArea {
+        width: calc(50% - 16px);
+    }
+}
+.RecommendArea {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    justify-content: flex-end;
+    padding: 40px 24px;
+}
+
+a {
+    color: #0071c1;
+    text-decoration: none;
+}
+
+.RecommendArea__name--ja {
+    font-size: 28px;
+    line-height: 42px;
+}
+.RecommendArea__name {
+    color: #fff;
+}
+
+.RecommendArea--osaka {
+    background-image: url(/assets/home/recommend/kyoto.jpg);
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .RecommendArea {
+        width: calc(50% - 16px);
+    }
+}
+.RecommendArea {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    justify-content: flex-end;
+    padding: 40px 24px;
+}
+
+a {
+    color: #0071c1;
+    text-decoration: none;
+}
+
+.RecommendArea__name--ja {
+    font-size: 28px;
+    line-height: 42px;
+}
+.RecommendArea__name {
+    color: #fff;
+}
+
+.RecommendArea--osaka {
+    background-image: url(/assets/home/recommend/sapporo.jpg);
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .RecommendArea {
+        width: calc(50% - 16px);
+    }
+}
+.RecommendArea {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    justify-content: flex-end;
+    padding: 40px 24px;
+}
+
+a {
+    color: #0071c1;
+    text-decoration: none;
+}
+
+.RecommendArea__name--ja {
+    font-size: 28px;
+    line-height: 42px;
+}
+.RecommendArea__name {
+    color: #fff;
+}
+
+.Footer {
+    align-items: center;
+    background-color: #1c1d3b;
+    display: flex;
+    height: 465px;
+}
+
+.Footer>div {
+    margin-top: 100px;
+}
+.container, .container-fluid {
+    max-width: 1440px;
+    padding: 0 32px;
+}
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Footer__logo {
+    margin-bottom: 16px;
+    width: 294px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.Footer__copyright {
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
