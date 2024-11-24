@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #devise
 gem 'devise'
+
+#画像のアップロード機能を簡単に追加できるgem
+gem 'carrierwave'

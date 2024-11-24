@@ -1,11 +1,4 @@
-<body>
-    <header>
-  <nav class="navbar Navbar">
-    <div class="container-fluid">
-      <a href="/"><img class="Navbar__logo" alt="サイトロゴ" src="https://rails-02-sample.herokuapp.com/assets/common/logo.png"></a>
-    </div>
-  </nav>
-</header>
+<%= render "devise/shared/header" %>
 
 <div class="FirstView">
   <section class="container">
@@ -47,13 +40,4 @@
   </section>
 </div>
 
- <footer class="Footer">
-  <div class="container-fluid">
-    <a href="/"><img class="Footer__logo" alt="サイトロゴ" src="https://rails-02-sample.herokuapp.com/assets/common/logo.png"></a>
-
-    <p class="Footer__copyright">
-      Copyright © Potepan Share 2024 All rights reserved
-    </p>
-  </div>
- </footer>
-</body>
+<%= render "devise/shared/footer" %>
