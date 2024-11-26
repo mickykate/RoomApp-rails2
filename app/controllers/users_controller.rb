@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  def profile_show  #マイページ
-    @user = User.find(params[:id])
+  def show  #マイページ
+    @user = User.find(profile_params[:id])
   end
 
   def profile_edit
