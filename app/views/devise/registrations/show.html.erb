@@ -1,5 +1,8 @@
 <%= render "devise/shared/header" %>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    
+<h2>設定画面</h2>
+
+<%= link_to 'アカウント情報', edit_user_registration_path %>
+<%= link_to 'プロフィール', show_users_path %>
+
 <%= render "devise/shared/footer" %>
