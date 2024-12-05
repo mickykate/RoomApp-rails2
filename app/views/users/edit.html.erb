@@ -3,8 +3,15 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
 <div class="field">
+    <%= f.label :icon %>
+    <%= f.file_field :icon %>
+</div>
+
+<div class="field">
     <%= f.label :username %><br />
     <%= f.text_field :username %>
 </div>
+
+#自己紹介のカラム(itroduction)追加予定
 
 <%= render "devise/shared/footer" %>

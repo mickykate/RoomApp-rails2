@@ -6,11 +6,11 @@ class UsersController < ApplicationController
   end
 
   def profile_edit
-    @user = User.current_user
+    @user = User.current_user.usename
   end
 
   def profile_update
-    @user = User.current_user
+    @user = User.current_user.username
      if @user.update(profile_params)
        redirect_to profile_path
      else

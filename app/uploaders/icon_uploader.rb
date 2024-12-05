@@ -32,7 +32,9 @@ class IconUploader < CarrierWave::Uploader::Base
   # version :thumb do
   #   process resize_to_fit: [50, 50]
   # end
-
+  include CarrierWave::MiniMagick
+  process resize_to_fit: [100, 100]
+  
   # Add an allowlist of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   # def extension_allowlist

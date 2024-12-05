@@ -60,3 +60,5 @@ gem 'devise'
 
 #画像のアップロード機能を簡単に追加できるgem
 gem 'carrierwave'
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
