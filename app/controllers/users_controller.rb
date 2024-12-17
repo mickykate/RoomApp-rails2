@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  def show  #マイページ
+  def new  #マイページ
     @user = User.find(profile_params[:id])
   end
 
@@ -24,6 +24,7 @@ class UsersController < ApplicationController
   end
     
   def profile_params
+    Rails.logger.debug(params.inspect)
     params.require(:users).permit(:username, :icon, :introduction)
   end
 end

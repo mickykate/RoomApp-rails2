@@ -22,10 +22,10 @@
       <%= link_to 'ログイン', new_user_session_path %>
      <% end %>
 
-     <% if @users.icon? %>
-      <%= image_tag @users.icon.url %>
+     <% if @user && @user.icon.present? %>
+      <%= image_tag @user.icon.url %>
      <% else %>
-      <%= image_tag ("app/assets/images/icon_sample/default-avatar-7a6cbfd7993e89f24bfc888f4a035a83c6f1428b8bdc47eed9095f2799a40153.png") %>
+      <%= image_tag "icon_sample/default-avatar-7a6cbfd7993e89f24bfc888f4a035a83c6f1428b8bdc47eed9095f2799a40153.png" %>
      <% end %>
 
     </nav>

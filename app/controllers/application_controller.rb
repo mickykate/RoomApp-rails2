@@ -4,6 +4,12 @@ class ApplicationController < ActionController::Base
   # ここから
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  before_action :authenticate_user!
+  
+  def new  #iconにuserを追加
+    @user = User.find(profile_params[:id])
+  end
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :email]) # 新規登録時(sign_up時)にusenameというキーのパラメーターを追加で許可する
   end
