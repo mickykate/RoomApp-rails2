@@ -17,7 +17,7 @@ class UsersController < ApplicationController
        render "profile_edit"
      end
   end
-    
+
   private
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:profile_update, keys: [:name, :image, :introduction])
