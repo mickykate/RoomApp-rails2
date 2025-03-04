@@ -18,5 +18,4 @@ class ApplicationController < ActionController::Base
       def sign_in_required
           redirect_to new_user_session_url unless user_signed_in?
       end
-  #ここまでを追記　usernameカラムをdbに登録させる設定
 end
